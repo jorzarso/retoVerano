@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="personaje, xarxatec, xarxatecactiva, experiencia, habilidades">
+    <link  rel="icon"   href="imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' rel='stylesheet'
+        type='text/css'>
+    <title>Hoja de personaje</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+            <div class="col-5">
+                <a href="index.html"><img class="imagenLogo" src="imagenes/Logo.png" alt="ImagenLogo"></a>
+            </div>
+            <div>
+                <a class="navbar-brand tamano-header" id="contacto" href="contacto.html" title ="contacto">Contacto</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="col-3">
+                <ul class="navbar-nav collapse dont-collapse-sm" id="collapsibleNavbar">
+                    <li class="nav-item">
+                        <a class="nav-link tamano-header" href="index.html" title ="habilidades" >Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tamano-header" href="index.html" title ="experiencia" >Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tamano-header" href="index.html" title ="estudios" >Estudios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tamano-header" href="index.html" title ="bonus" >Bonus</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <h1>Ester Martínez Flores</h1>
+                <div class="col">
+                    <div class="imagen-avatar">
+                        <div class="contenedor">
+                            <img src="imagenes/geek.png" class="rounded float-start" title="Imagen de tu avatar"
+                                alt="Imagen de tu avatar">
+                            <div class="progress" >
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" >
+                                90%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="datos-personales">
+            <div class="contenedorCuerpo">
+                <div class="botonTitulo">
+                    <button class="btn btn-secondary usuario" type="button"><img
+                            src="imagenes/datospersonales_v2.png" title ="descripción" ></button>
+                            <h3 class="textoPegadoBoton">Descripcion</h3>
+                </div>
+                <div id="avatarinfo">
+                    <h6 class="descripcion ps-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+                        maxime ut doloribus odit consequatur assumenda perspiciatis ratione provident dolorem quo! Sunt,
+                        soluta omnis. Numquam voluptatem quis aliquid unde nesciunt facilis omnis expedita, beatae
+                        deleniti vitae odit quibusdam repudiandae? Ex ab explicabo quasi aliquam adipisci in ipsam?
+                        Vitae quas laborum similique.</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedorCuerpo">
+            <div class="botonTitulo">
+                
+                <button class="btn btn-secondary usuario" type="button"><img
+                        src="imagenes/skills_v2.png" title ="habilidades" ></button>
+                        <h3>Habilidades</h3>
+            </div>
+            <div class="" id="habilidades">
+                <h3 class="my-2">Habilidades: <span class="small">Aquí pondríamos las habilidades</span></h3>
+                <div>
+                    <div class="row">
+                        <div class="col h5">
+                            HTML
+                        </div>
+                        <div class="col h5">
+                            CSS
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col h5">
+                            Control de versiones
+                        </div>
+                        <div class="col h5">
+                            Javascript
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorCuerpo">
+            <div class ="botonTitulo">                
+                    <button class="btn btn-secondary usuario" type="button"><img
+                            src="imagenes/Proyectos_v2.png" title ="estudios" ></button>
+                            <h3>Estudios</h3>                
+            </div>
+            <div>
+                <div class="" id="estudios">
+                    <h3 class="my-2">Estudios del personaje: <span class="small">Aquí pondríamos los estudios del
+                            personaje</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedorCuerpo">
+            <div  class ="botonTitulo">
+                <button class="btn btn-secondary usuario" type="button"><img
+                        src="imagenes/experiencia_v2.png" alt = "experiencia"></button>
+                        <h3>Experiencia</h3>
+            </div>
+            <div id="experiencia">
+                <div class="contenedor mb-5">
+                    <h3>Puntos de experiencia: </h3>
+                    <br>
+                    <div class="sombra">
+                        <div class="num">
+                            4
+                        </div>
+                    </div>
+                    <div class="barra">
+                        90/100
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedorCuerpo">
+            <div  class ="botonTitulo">
+                <button class="btn btn-secondary usuario" type="button"><img
+                        src="imagenes/bonus_v2.png" title ="bonus" > </button>
+                        <h3>Bonus</h3>
+            </div>
+            <div class="mb-5" id="recompensa">
+                <h3>Recompensa conseguida: <span class="small">Aquí pondríamos la Recompensa </span></h3>
+            </div>                    
+        </div>
+    </section>
+    <footer>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Telefono:617221032 | 
+        <a class="text-white" href="#">Ester Martínez Flores</a>
+        | Correo: estermartinezflores@gmail.com
+    </div>
+    </footer>
+</body>
+</html>

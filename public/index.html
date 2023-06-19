@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="personaje, xarxatec, xarxatecactiva, experiencia, habilidades">
+    <link  rel="icon"   href="imagenes/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' rel='stylesheet'
+        type='text/css'>
+    <script src="script.js"></script>
+    <title>Hoja de personaje</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+            <div class="col-6">
+                <a href="index.html"><img class="imagenLogo" src="imagenes/Logo.png" alt="ImagenLogo"></a>
+            </div>
+            <div>
+                <a class="navbar-brand tamano-header" id="contacto" href="contacto.html" title ="contacto">Contacto</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="col-3">
+                <ul class="navbar-nav collapse dont-collapse-sm" id="collapsibleNavbar">
+                    <li class="nav-item">
+                        <button class="nav-link tamano-header" onclick="muestra(this.value)" value="2" title ="habilidades" >Skills</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link tamano-header" onclick="muestra(this.value)" value="3" title ="experiencia" >Experiencia</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link tamano-header" onclick="muestra(this.value)" value="4" title ="estudios" >Estudios</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link tamano-header" onclick="muestra(this.value)" value="5" title ="bonus" >Bonus</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <h1>Ester Martínez Flores</h1>
+                <div class="col">
+                    <div class="imagen-avatar">
+                        <div class="contenedor">
+                            <img src="imagenes/geek.png" class="rounded float-start" title="Imagen de tu avatar"
+                                alt="Imagen de tu avatar">
+                            <div class="progress" >
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                aria-valuemin="0" aria-valuemax="100" >
+                                90%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="datos-personales">
+            <div class="dropdown">
+                <button class="btn btn-secondary usuario" type="button" onclick="muestra(this.value)" value="1"><img
+                        src="imagenes/datospersonales_v2.png" title ="descripción" > <span class="caret dropdown-toggle"
+                        data-toggle="dropdown"></span></button>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary usuario" type="button" onclick="muestra(this.value)" value="2"><img
+                        src="imagenes/skills_v2.png" title ="habilidades" ><span class="caret dropdown-toggle"
+                        data-toggle="dropdown"></span></button>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary usuario " type="button" onclick="muestra(this.value)" value="3"><img
+                        src="imagenes/Proyectos_v2.png" title ="proyectos" > <span class="caret dropdown-toggle"
+                        data-toggle="dropdown"></span></button>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary usuario" type="button" onclick="muestra(this.value)" value="4"><img
+                        src="imagenes/experiencia_v2.png" title ="experiencia" > <span class="caret dropdown-toggle"
+                        data-toggle="dropdown"></span></button>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary usuario" type="button" onclick="muestra(this.value)" value="5"><img
+                        src="imagenes/bonus_v2.png" title ="bonus" > <span class="caret dropdown-toggle"
+                        data-toggle="dropdown"></span></button>
+            </div>
+
+        </div>
+        <section class="my-2 container-fluid">
+            <div>
+                <div id="avatarinfo">
+                    <h6 class="descripcion ps-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+                        maxime ut doloribus odit consequatur assumenda perspiciatis ratione provident dolorem quo! Sunt,
+                        soluta omnis. Numquam voluptatem quis aliquid unde nesciunt facilis omnis expedita, beatae
+                        deleniti vitae odit quibusdam repudiandae? Ex ab explicabo quasi aliquam adipisci in ipsam?
+                        Vitae quas laborum similique.</h6>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" id="estudios">
+                        <h3 class="my-2">Estudios del personaje: <span class="small">Aquí pondríamos los estudios del
+                                personaje</span></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-md-12" id="experiencia">
+            <div class="contenedor">
+                <h3>Puntos de experiencia: </h3>
+                <div class="sombra">
+                    <div class="num">
+                        4
+                    </div>
+                </div>
+                <div class="barra">
+                    90/100
+                </div>
+            </div>
+        </div>
+        <section class="my-2 container-fluid">
+            <div>
+                <div class="row">
+                    <div class="col-md-12" id="recompensa">
+                        <h3>Recompensa conseguida: <span class="small">Aquí pondríamos la Recompensa </span></h3>
+                    </div>
+                    <div class="col-md-12" id="habilidades">
+                        <h3 class="my-2">Habilidades: <span class="small">Aquí pondríamos las habilidades</span></h3>
+                        <div>
+                            <div class="row">
+                                <div class="col h5">
+                                    HTML
+                                </div>
+                                <div class="col h5">
+                                    CSS
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col h5">
+                                    Control de versiones
+                                </div>
+                                <div class="col h5">
+                                    Javascript
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer class="text-center mt-5">
+        <div class="container pt-4">
+            <div class="mb-4">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="twitter" ><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="google" ><i class="fab fa-google"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="instagram" ><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="linkedin" ><i class="fab fa-linkedin"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a href="pdfVersion.html" class="pdf">Version PDF</a>
+            <hr>
+            <a class="text-white" href="#">Ester Martínez Flores</a>
+        </div>
+    </footer>
+</body>
+</html>

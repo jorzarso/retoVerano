@@ -1,0 +1,838 @@
+/* Colores:
+Rojo:#CC0033
+Azul:#132749
+Azul op:37435E
+gris text:F5F5F5
+gris-osc:C4C4C4
+rosa:B6656E
+*/
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:  'Lato', 'Roboto', 'Monserrat';
+}
+
+header{
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+    z-index: 1;
+    background-color:#0B1E46;
+}
+.navbar{
+    background-color:#0B1E46;   
+}
+h1{
+    color:#CC0033;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top:0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    opacity:100%;
+    display: flex;
+    justify-content: center;
+}
+h1>a{
+    text-decoration: none;
+    color:#D0D3D6;
+}
+h6>a{
+    text-decoration: none;
+    color:#D0D3D6;
+}
+.datos-personales{
+    display:flex;
+    justify-content: space-evenly!important;
+    align-items:center !important;
+}
+.datos-personales>div>button>img{
+    width: 1.4em;
+    padding:0.2rem;
+}
+li>button{
+    background-color: #0B1E46;
+    border:0;
+}
+.imagenLogo{
+    width: 400px;
+    background-color: white;
+}
+.pdf{
+    text-decoration: underline;
+}
+@media (min-width: 320px) {
+    .imagenLogo{
+        width:120px;
+    }
+    #contacto{
+        border: 1px solid white;
+        border-radius: 25px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .tamano-header{
+        font-size: 12px !important;
+    }
+    h1{
+        font-size:24px;
+    }
+    .imagen-avatar{
+        height: 280px;
+    }
+    .datos-personales>div>button{
+        width: 3em;
+        padding:0.5rem;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 4em;
+        height:2em;
+        max-width:100%; 
+    }
+    .usuario{
+        justify-content: space-around !important;
+    }
+
+    .contenedor-formulario{
+        display: grid;
+        gap:1rem;
+        max-width:100%;
+        max-height:500px;
+        grid-template-rows: repeat(10,1fr);
+        grid-template-columns: repeat(1,auto);
+        font-size: 30px;
+    }
+    .datos-contacto{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .mensaje{
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+    .nombre-completo{
+        grid-row: 2/3;
+        grid-column: 1/2¡;
+    }
+    .asunto{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .telefono{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    .email{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    .comentarios{
+        grid-row: 7/11;
+        grid-column: 1/2;
+    }
+    .envio-formulario{
+        grid-row: 11/12;
+        grid-column: 1/2;
+    }
+    input{
+        font-size:14px !important;
+    }
+    label{
+        font-size:22px;
+        border-radius: 12px;
+    }
+    textarea{
+        font-size:15px;
+        border-radius:10px;
+    }
+    .contenedor-formulario{
+        width: 100% !important;
+        max-height: 900px !important;
+    }
+    footer{
+        font-size:22px;
+    }
+    i{
+        font-size:15px;
+    }
+    .h3, h3{
+        font-size:1rem !important;
+    }
+    .h6, h6{
+        font-size:0.75rem !important;
+    }
+    .h5{
+        font-size:0.9rem;
+    }
+    #experiencia>div{
+        margin-top: 0;
+        height:100px !important;
+    }
+}
+
+@media (min-width: 375px) {
+    .imagenLogo{
+        width:150px;
+    }
+    #contacto{
+        border: 1px solid white;
+        border-radius: 25px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .tamano-header{
+        font-size: 12px !important;
+    }
+    h1{
+        font-size:24px;
+    }
+    .imagen-avatar{
+        height: 250px;
+    }
+    .datos-personales>div>button{
+        width: 3em;
+        padding:0.5rem;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 4em;
+        height:2em;
+        max-width:100%; 
+    }
+    .usuario{
+        justify-content: space-around !important;
+    }
+
+    .contenedor-formulario{
+        display: grid;
+        gap:1rem;
+        max-width:100%;
+        max-height:500px;
+        grid-template-rows: repeat(10,1fr);
+        grid-template-columns: repeat(1,auto);
+        font-size: 30px;
+    }
+    .datos-contacto{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .mensaje{
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+    .nombre-completo{
+        grid-row: 2/3;
+        grid-column: 1/2¡;
+    }
+    .asunto{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .telefono{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    .email{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    .comentarios{
+        grid-row: 7/11;
+        grid-column: 1/2;
+    }
+    .envio-formulario{
+        grid-row: 11/12;
+        grid-column: 1/2;
+    }
+    input{
+        font-size:14px !important;
+    }
+    label{
+        font-size:22px;
+        border-radius: 12px;
+    }
+    textarea{
+        font-size:15px;
+        border-radius:10px;
+    }
+    .contenedor-formulario{
+        width: 100% !important;
+        max-height: 900px !important;
+    }
+    footer{
+        font-size:22px;
+    }
+    i{
+        font-size:15px;
+    }
+    .h3, h3{
+        font-size:1rem !important;
+    }
+    .h6, h6{
+        font-size:0.75rem !important;
+    }
+    .h5{
+        font-size:0.9rem;
+    }
+}
+
+@media (min-width: 425px) {
+    .imagenLogo{
+        width:180px;
+    }
+    #contacto{
+        border: 1px solid white;
+        border-radius: 25px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .tamano-header{
+        font-size: 14px !important;
+    }
+    h1{
+        font-size:28px;
+    }
+    .imagen-avatar{
+        height: 300px;
+    }
+    .datos-personales>div>button{
+        width: 3.7em;
+        height: 3em;
+        padding:0.5rem;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 3.5em;
+        height: auto;
+        padding:0.8rem;
+        max-width:100%; 
+    }
+    .usuario{
+        justify-content: flex-end !important;
+    }
+
+    input{
+        font-size:14px !important;
+    }
+    label{
+        font-size:22px;
+        border-radius: 12px;
+    }
+    textarea{
+        font-size:15px;
+        border-radius:10px;
+    }
+    .contenedor-formulario{
+        width: 100% !important;
+        max-height: 900px !important;
+    }
+    footer{
+        font-size:22px;
+    }
+    i{
+        font-size:15px;
+    }
+    .h3, h3{
+        font-size:1rem !important;
+    }
+    .h6, h6{
+        font-size:0.75rem !important;
+    }
+    .h5{
+        font-size:0.9rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .imagenLogo{
+        width:240px;
+    }
+    #contacto{
+        border: 1px solid white;
+        border-radius: 25px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .imagen-avatar{
+        height: 300px;
+    }
+    .datos-contacto{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .mensaje{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .nombre-completo{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .asunto{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    .telefono{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    .email{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    .comentarios{
+        grid-row: 2/6;
+        grid-column: 2/3;
+    }
+    .envio-formulario{
+        grid-row: 6/7;
+        grid-column: 1/3;
+    }
+    .tamano-header{
+        font-size: 28px !important;
+    }
+    h1{
+        font-size:48px;
+    }
+    .datos-personales>div>button{
+        width: 5.5em;
+        height: 4em;
+        padding:0.5rem;
+        align-items:center;
+    }
+    .contenedor>img{
+        width: 15em;
+        height: auto;
+    }
+    .usuario{
+        justify-content: space-around !important;
+    }
+
+    input{
+        font-size:14px !important;
+    }
+    label{
+        font-size:22px;
+        border-radius: 12px;
+    }
+    textarea{
+        font-size:15px;
+        border-radius:10px;
+    }
+    .contenedor-formulario{
+        width: 100% !important;
+        max-height: 900px !important;
+    }
+    footer{
+        font-size:22px;
+    }
+    i{
+        font-size:15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .collapse.dont-collapse-sm {
+      display: block;
+      height: auto !important;
+      visibility: visible;
+      display: flex;
+      flex-direction: row;
+    }
+    .tamano-header{
+        font-size: 28px !important;
+    }
+    .imagenLogo{
+        width:300px;
+    }
+    h1{
+        font-size:48px;
+    }
+    #contacto{
+        border-radius: 30px;
+        padding:5px;
+        border:1px solid white;
+    }
+    .datos-personales>div>button{
+        width: 6em;
+        height: 4em;
+        padding:0.9rem;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 3.5em;
+        height: auto;
+        padding:0.8rem;
+        max-width:100%;      
+    }
+    .contenedor>img{
+        width: 15em;
+        height: auto;
+    }
+    .progress{
+        height:1.5rem;
+        font-size: 20px;
+        margin-bottom: 1rem !important;
+    }
+    .descripcion{
+        font-size: 20px;
+    }
+
+    input{
+        font-size:18px !important;
+    }
+    label{
+        font-size:30px;
+        border-radius: 15px;
+    }
+    textarea{
+        font-size:22px;
+        border-radius:15px;
+    }
+    .contenedor-formulario{
+        width: 100% !important;
+        max-height: 900px !important;
+    }
+    footer{
+        font-size:30px;
+    }
+    i{
+        font-size:22px;
+    }
+    .h3, h3{
+        font-size:2rem !important;
+    }
+    .h6, h6{
+        font-size:1.5rem !important;
+    }
+    .h5{
+        font-size:1.7rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .tamano-header{
+        font-size: 30px !important;
+    }
+    h1{
+        font-size:60px;
+    }
+    .imagen-avatar{
+        height: 500px;
+    }
+    .datos-personales>div>button{
+        width: 8em;
+        height: 5em;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 3.5em;
+        height: auto;
+        max-width:100%; 
+    }
+    .usuario{
+          justify-content:center !important;
+    }
+    .contenedor>img{
+        width: 20em;
+        height: auto;
+    }
+    .progress{
+        height:2rem;
+        font-size: 20px;
+        margin-bottom: 1.5rem !important;
+    }
+    .dropdown-toggle{
+        display:none;
+    }
+    #contacto{
+        border:1px solid white;
+        padding:5px;
+        border-radius: 60px !important;
+    } 
+    input{
+        font-size:24px !important;
+    }
+    label{
+        font-size:40px;
+        border-radius: 20px;
+    }
+    textarea{
+        font-size:30px;
+        border-radius:20px;
+    }
+    .contenedor-formulario{
+        width: 100% !important;
+        max-height: 900px !important;
+    }
+    footer{
+        font-size:40px;
+    }
+    i{
+        font-size:30px;
+    }
+    .h3, h3{
+        font-size:2.5rem !important;
+    }
+    .h6, h6{
+        font-size:1.5rem !important;
+    }
+    .h5{
+        font-size:2rem;
+    }
+    .sombra{ 
+        font-size:2rem;
+    }
+    .barra{ 
+        font-size:2rem;
+    }
+    #experiencia>div{
+        margin-top: 0;
+        height:150px!important;
+    }
+}
+@media (min-width: 2560px) {
+    .tamano-header{
+        font-size: 60px !important;
+    }
+    .imagenLogo{
+        width:500px;
+    }
+    h1{
+        font-size:140px;
+    }
+    .imagen-avatar{
+        height: 800px;
+    }
+    .datos-personales>div>button{
+        width: 14em;
+        height: 11em;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 5.5em;
+        height: auto;
+        padding:0.8rem;
+        max-width:100%;        
+    }
+    .contenedor>img{
+        width: 40em;
+        height: 40em;
+    }
+    .progress{
+        height:4rem;
+        font-size: 50px;
+        margin-bottom: 2rem !important;
+    }
+    .descripcion{
+        font-size: 40px;
+    }
+
+    input{
+        font-size:45px !important;
+    }
+    label{
+        font-size:60px;
+        border-radius: 30px;
+    }
+    textarea{
+        font-size:45px;
+        border-radius:30px;
+    }
+    .contenedor-formulario{
+        width: 100% !important;
+        max-height: 900px !important;
+    }
+    footer{
+        font-size:60px;
+    }
+    i{
+        font-size:40px;
+    }
+    .h3, h3{
+        font-size:4rem !important;
+    }
+    .h6, h6{
+        font-size:3rem !important;
+    }
+    .h5{
+        font-size:3.5rem;
+    }
+    .sombra{ 
+        font-size:3.5rem;
+    }
+    .barra{ 
+        font-size:3.5rem;
+        width:25rem !important;
+    }
+    .num{
+        font-size:3.5rem;
+        width: 170px !important;
+        height: 170px !important;
+        left:-80px !important;
+        top:-40px !important;
+    }
+    #experiencia{
+        height:200px;
+    }
+}
+li{
+    list-style:none;
+    color:#D0D3D6;
+}
+.descripcion{
+    padding:1rem;
+}
+.contacto{
+    color:#D0D3D6;
+    border: 1px solid #D0D3D6;
+    border-radius: 30px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    text-align: center;
+}
+#habilidades, #estudios, #experiencia, #recompensa {
+    display:none;
+}
+section{
+    color:#CC0033;
+    width: 100%;
+    opacity:100%;
+}
+.imagen-avatar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.usuario {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0B1E46;
+ }
+ #avatarinfo{
+    color:#D0D3D6;
+    background-color: #0B1E46; 
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    display:block;
+ }
+ #habilidades{
+    color:#D0D3D6;
+    background-color: #0B1E46; 
+    margin-top: 0.5rem;
+    border-radius: 10px;
+ }
+ #experiencia{
+    color:#D0D3D6;
+    background-color: #0B1E46; 
+    margin-top: 0.5rem;
+    border-radius: 10px;
+ }
+ #estudios{
+    color:#D0D3D6;
+    background-color: #0B1E46; 
+    margin-top: 0.5rem;
+    border-radius: 10px;
+ }
+ #recompensa{
+    color:#D0D3D6;
+    background-color: #0B1E46; 
+    margin-top: 0.5rem;
+    border-radius: 10px;
+ }
+ button>img{
+     width: 2rem;
+     object-fit: cover;
+ }
+ .btn-secondary {
+    background-color: #0B1E46;
+    border-color: #0B1E46;
+    color:#D0D3D6;
+ }
+.progress{
+    margin-top:1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.progress-bar{
+    background-color:#CC0033;
+    color:#D0D3D6;
+    border: 1px solid black;
+    width: 90%
+}
+.usuario:active{
+    color:#D0D3D6 !important;
+}
+.centrado{
+    position: absolute;
+    top: 0;
+    right: 3rem;
+ }
+ .contenedor{
+    position:relative;
+ }
+.num{
+    position: absolute;
+    left: 0;
+    top:-20px;
+    width: 70px;
+    height: 70px;
+    background:url(imagenes/estrella_v2.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+    color:#0B1E46;
+}
+.barra{
+    position:absolute;
+    left:30px;
+    width:150px;
+    border: 3px solid black;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #CC0033;
+    z-index:1;
+}
+.barra::before{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
+}
+.sombra{
+     /*filter: drop-shadow(0 0 10px);*/
+     position:absolute;
+     z-index: 2;
+}
+
+.contenedor-formulario{
+    display: grid;
+    gap:1rem;
+    max-width:100%;
+    max-height:500px;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(2,auto);
+    font-size: 30px;
+}
+.empezar-de-nuevo{
+    background-color: #CC0033;
+    color:white;
+}
+label{
+    color: #CC0033;
+    margin-top:1rem;
+}
+input{
+    border-radius: 10px;
+}
+textarea{
+    border-radius: 20px;
+}

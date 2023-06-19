@@ -1,0 +1,24 @@
+#Cambiar el grid para web
+#Cuando clicamos en Avatar info volver a index.html
+Faltaría el icono responsive
+#Cuando clicamos en contacto que nos lleve a contacto.html
+#Desplazar contacto hacia la derecha
+#Que no se muestre skills, proyectos y bonus al refrescar el navegador
+#Cambiar la imagen y ponerla en el medio junto con la barra
+#Mantener el boton de Ester Martínez Flores centrado
+#Cambiar tamaño de los iconos
+#Falta media query 1440
+#Falta media query 2560
+Cambiar lo que falta a la salida de los botones
+#Dentro de la página de contacto poner redes sociales
+#En el footer también
+Que descripción quede marcada y se desmarque tras apretar otro boton
+#Hacer contacto.html responsive
+#Que al pinchar sobre skills o proyectos baje y se abrán los botones.
+Poner las cards
+#Hacer la web accesible
+Comprobar con el validator
+#Limpiar código
+Arreglar vista PDF 
+#Ponerle borde al progress bar
+

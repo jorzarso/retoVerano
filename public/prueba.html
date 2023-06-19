@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Recordar poner palabras claves-->
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <script src="script.js"></script>
+  <title>Hoja de personaje</title>
+</head>
+<body>
+  <header>
+        
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+    <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+      
+          <!-- Brand -->
+          <div class="col-6 .col-sm-8 ">
+              <a class="navbar-brand container-fluid navbar-header titulo tamano-header" href="#">AvatarLogo</a>
+          </div>
+          <div>
+              <a class="navbar-brand tamano-header" id = "contacto" href="#">Contacto</a>
+          </div>
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Navbar links -->             
+          <div class="col-3">
+              <ul class="navbar-nav collapse dont-collapse-sm" id="collapsibleNavbar">
+                  <li class="nav-item">
+                      <a class="nav-link tamano-header" href="#habilidades">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link tamano-header" href="#">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link tamano-header" href="#">Bonus</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>  
+</header>
+    
+    <section>
+          
+      <!--Para hacer las imagenes responsive-->                       
+      <div class="contenedor-body">
+        <div class = "nombre">
+          <h1>Ester Martínez Flores</h1>
+        </div>
+        <div class="imagen-avatar">
+          <img src="imagenes/geek.png" class="rounded float-start" title = "Imagen de tu avatar" alt="Imagen de tu avatar">
+        </div>
+        
+        <div class="progress-bar progress barra-progreso" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="90" aria-valuemax="100">
+            90%
+        </div> 
+
+        <div class="container-description datos-personales clase-3">
+          <div class="dropdown">
+              <button class="btn btn-secondary usuario dropdown-toggle" type="button" data-toggle="dropdown" onclick="muestra(this.value)" value="1" ><img  src="ilustraciones/Descripcion.png" alt=""> <span class="caret"></span></button>                  
+          </div>
+          <div class="dropdown">
+              <button class="btn btn-secondary usuario dropdown-toggle" type="button" data-toggle="dropdown" onclick="muestra(this.value)" value="2"  ><img  src="ilustraciones/skills.png" alt=""><span class="caret"></span></button>                  
+          </div>
+          <div class="dropdown">
+              <button class="btn btn-secondary usuario dropdown-toggle" type="button" data-toggle="dropdown" onclick="muestra(this.value)" value="3" ><img src="ilustraciones/proyectos.png" alt=""> <span class="caret"></span></button>                  
+          </div>
+          <div class="dropdown">
+              <button class="btn btn-secondary usuario dropdown-toggle" type="button" data-toggle="dropdown" onclick="muestra(this.value)" value="4" ><img src="ilustraciones/experience.png" alt=""> <span class="caret"></span></button>                  
+          </div>
+          <div class="dropdown">
+              <button class="btn btn-secondary usuario dropdown-toggle" type="button" data-toggle="dropdown" onclick="muestra(this.value)" value="5" ><img src="ilustraciones/gift.png" alt=""> <span class="caret"></span></button>                  
+          </div>
+      </div>  
+
+    </div>    
+
+</body>
+</html>

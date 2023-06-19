@@ -1,0 +1,504 @@
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:  'Lato', 'Roboto', 'Monserrat';
+    width: 80%;
+    margin: auto;
+}
+header{
+    position:sticky;
+    position: -webkit-sticky;
+    top:0;
+    color:#D6274E;
+    z-index: 1;
+    background-color:#0B1E46;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    font-size:22px;
+    margin-top: 10px;
+}
+.navbar{
+    background-color:#0B1E46;
+    
+}
+h1{
+    color:#CC0033;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top:0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    opacity:100%;
+    display: flex;
+    justify-content: center;
+}
+h1>a{
+    text-decoration: none;
+    color:#D0D3D6;
+}
+h6>a{
+    text-decoration: none;
+    color:#D0D3D6;
+}
+.datos-personales{
+    justify-content: space-evenly!important;
+    align-items:center;
+    text-align: center;
+ }
+ .datos-personales>div>button>img{
+   width: 1.4em;
+   padding:0.2rem;
+ }
+ .imagenLogo{
+    width: 400px;
+    background-color: white;
+}
+.textoPegadoBoton{
+    display: inline-block;
+    vertical-align: top;
+}
+.contenedorCuerpo{
+    border-style: solid;
+    border-color:black;
+    border-width: 2px;
+    margin: 5px;
+    background-color: lightgrey;
+}
+.botonTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    flex-direction: column;
+}
+@media (min-width: 320px) {
+    .imagenLogo{
+        width:100px ;
+        height:16px;
+        margin-left:-20px;
+        padding:1px;
+        border-radius: 5px;
+    }
+    .navbar-toggler{
+        width:50px!important;
+    }
+    .navbar-toggler-icon{
+        margin-left:-3px;
+    }
+    .tamano-header{
+        font-size: 12px !important;
+        margin-left:7px;
+        margin-right:-5px;
+    }
+    h1{
+        font-size:24px;
+    }
+    .datos-personales>div>button{
+        width: 3em;
+        height: 3em;
+        padding:0.5rem;
+        align-items:center;
+    }
+}
+
+@media (min-width: 375px) {
+    .imagenLogo{
+        width:120px;
+        height:16px;
+        margin-left:-20px;
+        padding:1px;
+        border-radius: 5px;
+    }
+    .tamano-header{
+        font-size: 12px !important;
+    }
+    h1{
+        font-size:24px;
+    }
+    .datos-personales>div>button{
+        width: 3em;
+        padding:0.5rem;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 4em;
+        height:2em;
+        max-width:100%; 
+      }
+}
+@media (min-width: 425px) {
+    .imagenLogo{
+        width:140px;
+        height:18px;
+        margin-left:-20px;
+    }
+    .tamano-header{
+        font-size: 14px !important;
+    }
+    h1{
+        font-size:28px;
+    }
+    .datos-personales>div>button{
+        width: 3.7em;
+        height: 3em;
+        padding:0.5rem;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 3.5em;
+        height: auto;
+        padding:0.8rem;
+        max-width:100%; 
+      }
+}
+@media (min-width: 768px) {
+    .imagenLogo{
+        width:180px;
+        height:25px;
+        padding:3px;
+        border-radius: 5px;
+    }
+    .tamano-header{
+        font-size: 28px !important;
+    }
+    h1{
+        font-size:48px;
+    }
+    .datos-personales>div>button{
+        width: 5.5em;
+        height: 4em;
+        padding:0.5rem;
+        align-items:center;
+    }
+    .contenedor>img{
+        width: 15em;
+        height: auto;
+    }
+    .usuario{
+        justify-content: space-around !important;
+    }
+    #contacto{
+        margin-left: 150px;
+    }
+}
+@media (min-width: 1024px) {
+    .imagenLogo{
+        width:250px;
+        height:30px;
+    }
+    .collapse.dont-collapse-sm {
+      display: block;
+      height: auto !important;
+      visibility: visible;
+      display: flex;
+      flex-direction: row;
+    }
+    .tamano-header{
+        font-size: 24px !important;
+    }
+    h1{
+        font-size:48px;
+    }
+    .datos-personales>div>button{
+        width: 6em;
+        height: 4em;
+        padding:0.9rem;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 3.5em;
+        height: auto;
+        padding:0.8rem;
+        max-width:100%;
+        
+    }
+    .contenedor>img{
+        width: 15em;
+        height: auto;
+    }
+    .progress{
+        height:1.5rem;
+        font-size: 20px;
+        margin-bottom: 1rem !important;
+    }
+    .descripcion{
+        font-size: 20px;
+    }
+    #contacto{
+        margin-left: 0;
+    }
+}
+@media (min-width: 1440px) {
+    .imagenLogo{
+        width:300px;
+    }
+    .tamano-header{
+        font-size: 30px !important;
+    }
+    h1{
+        font-size:60px;
+    }
+    .datos-personales>div>button{
+        width: 8em;
+        height: 5em;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 3.5em;
+        height: auto;
+        max-width:100%; 
+    }
+    .usuario{
+          justify-content:center !important;
+    }
+    .contenedor>img{
+        width: 20em;
+        height: auto;
+    }
+    .progress{
+        height:2rem;
+        font-size: 20px;
+        margin-bottom: 1.5rem !important;
+    }
+    .dropdown-toggle{
+        display:none;
+    }
+    .descripcion{
+        font-size: 22px;
+    }
+    #contacto{
+        border-radius: 60px !important;
+    } 
+}
+@media (min-width: 2560px) {
+    .imagenLogo{
+        width:420px;
+    }
+    .tamano-header{
+        font-size: 60px !important;
+    }
+    h1{
+        font-size:140px;
+    }
+    .datos-personales>div>button{
+        width: 14em;
+        height: 11em;
+        align-items:center;
+    }
+    .datos-personales>div>button>img{
+        width: 5.5em;
+        height: auto;
+        padding:0.8rem;
+        max-width:100%;        
+    }
+    .contenedor>img{
+        width: 40em;
+        height: 40em;
+    }
+    .progress{
+        height:3rem;
+        font-size: 30px;
+        margin-bottom: 2rem !important;
+    }
+    .descripcion{
+        font-size: 40px;
+    }
+    .h3, h3{
+        font-size:4rem !important;
+    }
+    .h6, h6{
+        font-size:3rem !important;
+    }
+    .h5{
+        font-size:3.5rem;
+    }
+    .sombra{ 
+        font-size:3.5rem;
+    }
+    .barra{ 
+        font-size:3.5rem;
+        width:25rem !important;
+    }
+    .num{
+        font-size:3.5rem;
+        width: 170px !important;
+        height: 170px !important;
+        left:-80px !important;
+        top:-40px !important;
+    }
+    #experiencia>div{
+        bottom:0px;
+        height:200px;
+    }
+    .btn-secondary{
+        width: 150px!important;
+        height: auto;
+    }
+    .btn-secondary>img{
+        width: 100px!important;
+        height: auto;
+    }
+}
+
+li{
+    list-style:none;
+    color:#D0D3D6;
+}
+.descripcion{
+    padding:1rem;
+}
+#contacto{
+    color:#D0D3D6;
+    border: 1px solid #D0D3D6;
+    border-radius: 30px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    text-align: center;
+}
+
+section{
+    color:#CC0033;
+    width: 100%;
+    opacity:100%;
+}
+.imagen-avatar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.usuario {
+    margin: 1px;
+    margin-right: 10px;
+ }
+ #avatarinfo{
+    color:#D0D3D6;
+    background-color: #0B1E46; 
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    display:block;
+ }
+ #habilidades{
+    color:#D0D3D6;
+    background-color: #0B1E46; 
+    margin-top: 0.5rem;
+    border-radius: 10px;
+ }
+ #experiencia{
+    color:#D0D3D6;
+    background-color: #0B1E46; 
+    margin-top: 0.5rem;
+    border-radius: 10px;
+    padding-bottom: 1px;
+ }
+ #estudios{
+    color:#D0D3D6;
+    background-color: #0B1E46; 
+    margin-top: 0.5rem;
+    border-radius: 10px;
+ }
+ #recompensa{
+    color:#D0D3D6;
+    background-color: #0B1E46; 
+    margin-top: 0.5rem;
+    border-radius: 10px;
+ }
+ button>img{
+     width: 2rem;
+     object-fit: cover;
+ }
+ .btn-secondary {
+    background-color: #0B1E46;
+    border-color: #0B1E46;
+    color:#D0D3D6;
+ }
+.progress{
+    margin-top:1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.progress-bar{
+    background-color:#CC0033;
+    color:#D0D3D6;
+    border: 1px solid black;
+    width: 90%
+}
+.usuario:active{
+    color:#D0D3D6 !important;
+}
+.centrado{
+    position: absolute;
+    top: 0;
+    right: 3rem;
+ }
+ .contenedor{
+    position:relative;
+ }
+ .num{
+    position: absolute;
+    left: 0;
+    top:-20px;
+    width: 70px;
+    height: 70px;
+    background:url(imagenes/estrella_v2.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+    color:#0B1E46;
+}
+ .barra{
+    position:absolute;
+    left:30px;
+    width:150px;
+    border: 3px solid black;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background:#CC0033;
+    
+}
+.barra::before{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    
+} 
+ .sombra{
+    position:absolute;
+    z-index: 1;
+ }
+.container-description {
+    display: flex;
+    justify-content: center;
+}
+.contenedor-body{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(4,auto);
+    
+}
+.imagen-avatar{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.barra-progreso{
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.clase-3{
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+.nombre{
+    grid-column: 1/5;
+    grid-row: 1/5;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="nombre, apellidos, contacto, email, correo" />
+    <link  rel="icon"   href="imagenes/favicon.png" type="image/png">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+            <div class="col-6">
+                <a href="index.html"><img class="imagenLogo" src="imagenes/Logo.png" alt="ImagenLogo"></a>
+            </div>
+            <div>
+                <a class="navbar-brand tamano-header" id="contacto" href="#" title="contacto"
+                    >Contacto</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="col-3">
+                <ul class="navbar-nav collapse dont-collapse-sm" id="collapsibleNavbar">
+                    <li class="nav-item">
+                        <a class="nav-link tamano-header" href="index.html" title ="habilidades" >Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tamano-header" href="index.html" title ="experiencia" >Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tamano-header" href="index.html" title ="estudios" >Estudios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tamano-header" href="index.html" title ="bonus" >Bonus</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h1 class="titulo">Contacto</h1>
+    <!--si pudiesemos hacer esto sin PHP sería brutal pero lo dejamos para lo ultimo-->
+    <form class="contacto" action="mailto:aaronbellesbeltran@gmail.com" method="POST"
+        onreset="return confirmation_reset()" onsubmit="return confirmation_submit()">
+        <div class="contenedor-formulario pb-2">
+            <div>
+                <label class="datos-contacto">Datos del contactante</label>
+            </div>
+            <div class="nombre-completo">
+                <input type="text" size="35" placeholder="Escribe tu nombre: " maxlength="25" required />
+            </div>
+            <div class="asunto">
+                <input type="text" size="35" placeholder="Escribe el asunto: " maxlength="50" required />
+            </div>
+            <div class="telefono">
+
+                <input type="tel" size="35" placeholder="Escribe tu telefono: " maxlength="9" />
+            </div>
+            <div class="email">
+                <input type="email" size="35" placeholder="ejemplo@ejemplo.com " required />
+            </div>
+            <div class="mensaje">
+                <label>Comentarios</label>
+            </div>
+            <div class="comentarios">
+                <textarea style="resize:none" rows="7" placeholder="Escribe tu mensaje: " cols=35></textarea>
+            </div>
+            <div class="envio-formulario">
+                <input class="btn btn-primary" type="submit" value="Terminar" title="Enviar cuestionario"
+                     />
+                <input class="btn empezar-de-nuevo" type="reset" value="Empezar de nuevo"
+                    title="Volver a empezar el cuestionario"  />
+            </div>
+        </div>
+    </form>
+    <footer class="text-center mt-5">
+        <div class="container pt-4">
+            <div class="mb-4">
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="twitter" ><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="google" ><i class="fab fa-google"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="instagram" ><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="linkedin" ><i class="fab fa-linkedin"></i></a>
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark" title ="github"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a href="pdfVersion.html" class="pdf" >Version PDF</a>
+            <hr>
+            <a class="text-white" href="#">Ester Martínez Flores</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

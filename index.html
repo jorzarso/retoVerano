@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Recordar poner palabras claves-->
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' rel='stylesheet' type='text/css'>    
+    <script src="script.js"></script>
+    <title>Hoja de personaje</title>
+</head>
+<body>
+    <header>
+        
+          <!-- A grey horizontal navbar that becomes vertical on small screens -->
+          <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+            
+                <!-- Brand -->
+                <div class="col-7 .col-sm-8 ">
+                    <a class="navbar-brand container-fluid navbar-header titulo tamano-header" href="#">AvatarLogo</a>
+                </div>
+                <div>
+                    <a class="navbar-brand tamano-header" id = "contacto"  href="contacto.html">Contacto</a> <!-- target="_blank"-->
+                </div>
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Navbar links -->             
+                <div class="col-3">
+                    <ul class="navbar-nav collapse dont-collapse-sm" id="collapsibleNavbar">
+                        <li class="nav-item">
+                            <a class="nav-link tamano-header" href="#habilidades">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link tamano-header" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link tamano-header" href="#">Bonus</a>
+                        </li>
+                    </ul>
+                </div>
+          </nav>  
+    </header>
+
+    <section>
+        <div class = "container-fluid">
+            <div class = "row">
+                <h1>Ester Martínez Flores</h1>
+                <div class = "col">
+                    <div class="imagen-avatar">
+                        <!--Para hacer las imagenes responsive-->
+                        <div class="contenedor">                          
+                        
+                            <img src="imagenes/geek.png" class="rounded float-start" title = "Imagen de tu avatar" alt="Imagen de tu avatar">
+                            
+                            <div class="progress-bar progress " role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="90" aria-valuemax="100">
+                                90%
+                            </div> 
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="container-description datos-personales">
+            <div class="dropdown">
+                <button class="btn btn-secondary usuario" type="button"  onclick="muestra(this.value)" value="1" ><img  src="ilustraciones/Descripcion.png" alt=""> <span class="caret dropdown-toggle" data-toggle="dropdown"></span></button>                  
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary usuario" type="button"  onclick="muestra(this.value)" value="2" ><img  src="ilustraciones/skills.png" alt=""><span class="caret dropdown-toggle" data-toggle="dropdown"></span></button>                  
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary usuario " type="button"  onclick="muestra(this.value)" value="3" ><img src="ilustraciones/proyectos.png" alt=""> <span class="caret dropdown-toggle" data-toggle="dropdown"></span></button>                  
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary usuario" type="button"  onclick="muestra(this.value)" value="4" ><img src="ilustraciones/experience.png" alt=""> <span class="caret dropdown-toggle" data-toggle="dropdown"></span></button>                  
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary usuario" type="button"  onclick="muestra(this.value)" value="5" ><img src="ilustraciones/gift.png" alt=""> <span class="caret dropdown-toggle" data-toggle="dropdown"></span></button>                  
+            </div>
+            
+        </div>                       
+        <section class = "my-2 container-fluid"> 
+            <div class="">
+                <div id="avatarinfo">
+                    <h6 class="descripcion ps-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti maxime ut doloribus odit consequatur assumenda perspiciatis ratione provident dolorem quo! Sunt, soluta omnis. Numquam voluptatem quis aliquid unde nesciunt facilis omnis expedita, beatae deleniti vitae odit quibusdam repudiandae? Ex ab explicabo quasi aliquam adipisci in ipsam? Vitae quas laborum similique.</h6>
+                </div>
+                <div class="row">
+                    <div class = "col-md-6" id="estudios">
+                        <h3 class = "my-2">Estudios del personaje: <span class="small">Aquí pondríamos los estudios del personaje</span></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class = "my-2container-fluid"> 
+            <div class="">
+                <div class="row">
+                    <div class = "col-md-6" id="experiencia">
+                        <h3>Puntos de experiencia: </h3>
+                            <div class="contenedor">
+                                <div class="sombra">
+                                    <div class="num">
+                                        
+                                    </div>
+                                </div>
+                                <div class="barra">
+                                    0/50
+                                </div>
+                            </div>                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class = "my-2 container-fluid"> 
+            <div class="">
+                <div class="row">
+                    <div class = "col-md-6" id="recompensa">
+                        <h3>Recompensa conseguida: <span class="small">Aquí pondríamos la Recompensa </span></h3>
+                    </div> 
+                    <div class = "col-md-6" id="habilidades">
+                        <h3 class = "my-2">Habilidades: <span class="small">Aquí pondríamos las habilidades</span></h3>
+                        <div class="">
+                            <div class="row">
+                                <div class="col h5">
+                                    HTML
+                                </div>
+                                <div class="col h5">
+                                    CSS
+                                </div>
+                            </div>
+                            <div class = "row">
+                                <div class="col h5">
+                                    Control de versiones
+                                </div>
+                                <div class="col h5">
+                                    Javascript
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer class="text-center mt-5">
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <div class="mb-4" >
+              <!-- Facebook -->
+              <a class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-facebook-f"></i
+                ></a>
+        
+              <!-- Twitter -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-twitter"></i
+              ></a>
+        
+              <!-- Google -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-google"></i
+              ></a>
+        
+              <!-- Instagram -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-instagram"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <!-- Github -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-github"></i
+              ></a>
+                </div>
+            <!-- Section: Social media -->
+          </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="#">Ester Martínez Flores</a>
+          </div>
+    </footer>
+</body>
+</html>
